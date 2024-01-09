@@ -2,5 +2,8 @@
 /* Import _reset.scss */
 @use 'components/core/reset';
 
+/* Import _body.scss */
+@use 'components/core/body';
+
 /* Import _main-ctn.scss */
 @use 'components/core/main-ctn';
