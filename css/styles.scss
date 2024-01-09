@@ -1,4 +1,7 @@
 
+/* Import _colors.scss */
+@use 'components/utils/colors';
+
 /* Import _reset.scss */
 @use 'components/core/reset';
 
@@ -7,3 +10,10 @@
 
 /* Import _main-ctn.scss */
 @use 'components/core/main-ctn';
+
+/* Import _form-todo.scss */
+@use 'components/form-todo';
+
+/* Import _edit-todo.scss */
+@use 'components/edit-form';
+
