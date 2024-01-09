@@ -11,6 +11,9 @@
 /* Import _main-ctn.scss */
 @use 'components/core/main-ctn';
 
+/* Improt _header-ctn.scss */
+@use 'components/header-ctn';
+
 /* Import _form-todo.scss */
 @use 'components/form-todo';
 
