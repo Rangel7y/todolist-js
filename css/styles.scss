@@ -20,3 +20,9 @@
 /* Import _edit-todo.scss */
 @use 'components/edit-form';
 
+/* Improt _toolbar.scss */
+@use 'components/toolbar';
+
+/* Import _filter.scss */
+@use 'components/filter';
+
