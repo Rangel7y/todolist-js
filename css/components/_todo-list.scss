@@ -1,0 +1,72 @@
+
+/* TODO-LIST */
+.todo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 0.75rem;
+
+    border-bottom: 1px solid rgb(57 81 105 / 30%);
+
+    h3{
+        flex: 1;
+        font-size: 0.9rem;
+
+        white-space: nowrap;
+
+        text-overflow: clip;
+        overflow-x: auto;
+        
+        &::-webkit-scrollbar{
+            display: flex;
+            height: 0.60rem;
+            border: none;
+    
+        /*  &:hover{
+                background: hsla(0, 0%, 20%, 0.5);
+                border-radius: 15px;
+            } */
+        }
+        &::-webkit-scrollbar-track{
+            background: hsla(216, 71%, 22%, 0.5);
+            border-radius: 15px;
+        }
+        &::-webkit-scrollbar-thumb{
+            background: hsla(210, 30%, 32%, 0.5);
+            border-radius: 15px;
+        }
+    }
+
+    button{
+        transition: .4s;
+
+        margin-left: .4rem;
+
+        svg{
+            pointer-events: none;
+        }
+    }
+}
+
+/* Done */
+.done{
+    background-color: var(--VelvetRope);
+
+    h3{
+        color: var(--White);
+
+        text-decoration: line-through;
+
+        font-style: italic;
+
+        &::-webkit-scrollbar-track{
+            background: hsla(216, 90%, 69%, 0.5);
+            border-radius: 15px;
+        }
+        &::-webkit-scrollbar-thumb{
+            background: hsla(209, 46%, 69%, 0.5);
+            border-radius: 15px;
+        }
+    }
+}
