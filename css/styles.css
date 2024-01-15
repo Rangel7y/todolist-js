@@ -160,8 +160,7 @@ input, #filter-select {
 #sec-search {
   display: flex;
   flex-direction: column;
-  width: 150px;
-  border-right: 1px solid var(--LightGray);
+  border-right: 1px solid rgba(57, 81, 105, 0.3);
   padding-right: 1rem;
   margin-right: 1rem;
 }
