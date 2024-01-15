@@ -1,0 +1,247 @@
+/* Import _colors.scss */
+/* COLORS */
+:root {
+  --White: #fff;
+  --LightGray: #ccc;
+  --Carbon: #333;
+  --AmbassadorBlue: #102f5e;
+  --VelvetRope: #395169;
+}
+
+/* Import _reset.scss */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--VelvetRope);
+}
+
+/* Import _body.scss */
+/* BODY */
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* Import _main-ctn.scss */
+/* MAIN-CONTAINER */
+#main-ctn {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 7rem auto;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px var(--VelvetRope);
+}
+#main-ctn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 3px;
+  border: 2px solid var(--AmbassadorBlue);
+  transform: 0.4s;
+  cursor: pointer;
+  opacity: 0.8;
+}
+#main-ctn button:hover {
+  background-color: var(--AmbassadorBlue);
+}
+#main-ctn button:hover svg {
+  fill: white;
+}
+
+/* Icons */
+svg {
+  fill: var(--AmbassadorBlue);
+}
+
+/* Inputs styles */
+input {
+  width: 80%;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.3rem;
+  color: var(--VelvetRope);
+}
+input:focus {
+  outline: none;
+  box-shadow: 0px 1px 7px rgb(57, 81, 105);
+}
+input::-moz-placeholder {
+  color: var(--VelvetRope);
+  opacity: 0.8;
+}
+input::placeholder {
+  color: var(--VelvetRope);
+  opacity: 0.8;
+}
+
+input, #filter-select {
+  height: 32px;
+  box-shadow: 0px 1px 4px rgba(57, 81, 105, 0.7215686275);
+  border-radius: 3px;
+  border: none;
+}
+
+/* Hide */
+.hide {
+  display: none;
+}
+
+/* Improt _header-ctn.scss */
+/* HEADEAR-CONTAINER */
+#header-ctn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(57, 81, 105, 0.3);
+}
+
+/* Import _form-todo.scss */
+/* FORM-TODO */
+#form-todo {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(57, 81, 105, 0.3);
+}
+#form-todo p {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+/* FORM-CONTROL */
+.form-control {
+  display: flex;
+}
+.form-control button {
+  transition: 0.4s;
+}
+
+/* Import _edit-todo.scss */
+/* EDIT-FORM */
+#form-edit-todo {
+  border-bottom: 1px solid rgba(57, 81, 105, 0.3);
+  padding: 1rem;
+}
+#form-edit-todo p {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+/* Input Edit */
+#inp-edit {
+  margin-right: 0.3rem;
+}
+
+/* Button Cancel Edit */
+#btn-cancel-edit {
+  transition: 0.4s;
+  margin-top: 1rem;
+}
+#btn-cancel-edit:hover {
+  color: var(--White);
+}
+
+/* Improt _toolbar.scss */
+/* TOOLBAR */
+#toolbar {
+  display: flex;
+  border-bottom: 1px solid rgba(57, 81, 105, 0.3);
+  padding: 1rem;
+}
+#toolbar h4 {
+  margin-bottom: 0.5rem;
+}
+
+/* Section Search */
+#sec-search {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  border-right: 1px solid var(--LightGray);
+  padding-right: 1rem;
+  margin-right: 1rem;
+}
+#sec-search form {
+  display: flex;
+}
+
+/* FILTER */
+#filter h4 {
+  margin-bottom: 0.5rem;
+}
+#filter select {
+  padding: 0.25rem 0.5rem;
+  opacity: 0.8;
+  outline: none;
+}
+
+/* Import _todo-list.scss */
+/* TODO-LIST */
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.75rem;
+  border-bottom: 1px solid rgba(57, 81, 105, 0.3);
+}
+.todo h3 {
+  flex: 1;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  text-overflow: clip;
+  overflow-x: auto;
+}
+.todo h3::-webkit-scrollbar {
+  display: flex;
+  height: 0.6rem;
+  border: none;
+  /*  &:hover{
+          background: hsla(0, 0%, 20%, 0.5);
+          border-radius: 15px;
+      } */
+}
+.todo h3::-webkit-scrollbar-track {
+  background: hsla(216, 71%, 22%, 0.5);
+  border-radius: 15px;
+}
+.todo h3::-webkit-scrollbar-thumb {
+  background: hsla(210, 30%, 32%, 0.5);
+  border-radius: 15px;
+}
+.todo button {
+  transition: 0.4s;
+  margin-left: 0.4rem;
+}
+.todo button svg {
+  pointer-events: none;
+}
+
+/* Done */
+.done {
+  background-color: var(--VelvetRope);
+}
+.done h3 {
+  color: var(--White);
+  text-decoration: line-through;
+  font-style: italic;
+}
+.done h3::-webkit-scrollbar-track {
+  background: hsla(216, 90%, 69%, 0.5);
+  border-radius: 15px;
+}
+.done h3::-webkit-scrollbar-thumb {
+  background: hsla(209, 46%, 69%, 0.5);
+  border-radius: 15px;
+}
+
+/* Import _responsive.scss */
+/* 480px */
+@media screen and (min-width: 480px) {
+  #main-ctn {
+    width: 450px;
+  }
+}/*# sourceMappingURL=styles.css.map */
