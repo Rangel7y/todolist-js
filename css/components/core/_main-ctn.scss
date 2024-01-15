@@ -1,0 +1,80 @@
+
+/* MAIN-CONTAINER */
+#main-ctn{
+    display: flex;
+    flex-direction: column;
+
+    width: 300px;
+
+    margin: 7rem auto;
+    padding: 1.5rem;
+
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px var(--VelvetRope);
+
+    button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 32px;
+        height: 32px;
+
+        border-radius: 3px;
+        border: 2px solid var(--AmbassadorBlue);
+
+        transform: 0.4s;
+
+        cursor: pointer;
+
+        opacity: 0.8;
+
+        &:hover{
+            background-color: var(--AmbassadorBlue);
+
+            svg{
+                fill: white;
+            }
+        }
+    }
+}
+
+/* Icons */
+svg{
+    fill: var(--AmbassadorBlue);
+}
+
+/* Inputs styles */
+input{
+    width: 80%;
+
+    padding: 0.25rem 0.5rem;
+
+    margin-right: 0.3rem;
+
+    color: var(--VelvetRope);
+
+    &:focus{
+        outline: none;
+        box-shadow: 0px 1px 7px rgb(57 81 105);
+    }
+
+    &::placeholder{
+        color: var(--VelvetRope);
+
+        opacity: 0.8;
+    }
+}
+input, #filter-select{
+    height: 32px;
+    
+    box-shadow: 0px 1px 4px #395169b8;
+
+    border-radius: 3px;
+    border: none;
+}
+
+/* Hide */
+.hide{
+    display: none;
+}
