@@ -1,10 +1,21 @@
 
 /* FORM-TODO */
-/* #form-todo{
+#form-todo{
+    padding: 1rem;
 
-} */
+    border-bottom: 1px solid rgb(57 81 105 / 30%);
 
-/* INPUT-TODO */
-#inp-todo{
-    padding: 0.25rem 0.5rem;
+    p{
+        margin-bottom: .5rem;
+        font-weight: bold;
+    }
+}
+
+/* FORM-CONTROL */
+.form-control{
+    display: flex;
+
+    button{
+        transition: .4s;
+    }
 }
