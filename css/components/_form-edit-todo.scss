@@ -1,0 +1,27 @@
+
+/* EDIT-FORM */
+#form-edit-todo{
+    border-bottom: 1px solid rgb(57 81 105 / 30%);
+
+    padding: 1rem;
+
+    p{
+        margin-bottom: .5rem;
+        font-weight: bold;
+    }
+}
+
+/* Input Edit */
+#inp-edit{
+    margin-right: .3rem;
+}
+
+/* Button Cancel Edit */
+#btn-cancel-edit{
+    transition: .4s;
+    margin-top: 1rem;
+
+    &:hover{
+        color: var(--White);
+    }
+}
