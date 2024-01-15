@@ -18,11 +18,13 @@
 @use 'components/form-todo';
 
 /* Import _edit-todo.scss */
-@use 'components/edit-form';
+@use 'components/form-edit-todo';
 
 /* Improt _toolbar.scss */
 @use 'components/toolbar';
 
-/* Import _filter.scss */
-@use 'components/filter';
+/* Import _todo-list.scss */
+@use 'components/todo-list';
 
+/* Import _responsive.scss */
+@use 'components/core/responsive';
