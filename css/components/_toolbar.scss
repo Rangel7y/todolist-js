@@ -1,0 +1,46 @@
+
+/* TOOLBAR */
+#toolbar{
+    display: flex;
+
+    border-bottom: 1px solid rgb(57 81 105 / 30%);
+
+    padding: 1rem;
+
+    h4{
+        margin-bottom: .5rem;
+    }
+}
+
+/* Section Search */
+#sec-search{
+    display: flex;
+    flex-direction: column;
+
+    border-right: 1px solid rgb(57 81 105 / 30%);
+
+    padding-right: 1rem;
+
+    margin-right: 1rem;
+
+    form{
+        display: flex;
+    }
+
+}
+
+/* FILTER */
+#filter{
+    h4{
+        margin-bottom: .5rem;
+    }
+
+    select{
+        padding: 0.25rem 0.5rem;
+
+        opacity: 0.8;
+
+        outline: none;
+    }
+}
+
